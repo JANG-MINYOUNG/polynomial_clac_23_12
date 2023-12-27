@@ -19,8 +19,33 @@ public class CalcTest {
   }
 
   @Test
-  @DisplayName("2 + 3 == 4")
+  @DisplayName("2 + 2 == 4")
   void t3() {
     assertThat(Calc.run("2 + 2")).isEqualTo(4);
   }
+
+  @Test
+  @DisplayName("123 + 456 == 579")
+  void t4() {
+    assertThat(Calc.run("123 + 456")).isEqualTo(579);
+  }
+
+  @Test
+  @DisplayName("1000 + 200 == 1200")
+  void t5() {
+    assertThat(Calc.run("1000 + 200")).isEqualTo(1200);
+  }
+
+  @Test
+  @DisplayName("50 - 30 == 20")
+  void t6() {
+    assertThat(Calc.run("50 - 30")).isEqualTo(20);
+  }
+
+  @Test
+  @DisplayName("3 - 1 == 2")
+  void t7() {
+    assertThat(Calc.run("3 - 1")).isEqualTo(2);
+  }
+
 }
